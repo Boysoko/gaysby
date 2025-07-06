@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>URGENT MESSAGE FOR [Gaysby]</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            text-align: center;
+            background: #ff00ff;
+            color: #00ffff;
+            padding: 50px;
+            font-size: 3em;
+        }
+        button {
+            font-size: 1em;
+            padding: 15px;
+            background: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="message">Hey [GAYSBY].</h1>
+    <p>This is *not* a JOKE. its a FLIRT.</p>
+    <button onclick="changeMessage()">Nad deer daraad l bai 爸爸</button>
+
+    <script>
+        const messages = [
+            "Did you know you're 97.3% more attractive than the average human?",
+            "Alert: You’ve been selected as *World’s Most AASH MUUTAI Man*. Congrats?",
+            "Your face dark and nasty, just like my humor. ying yang?.",
+            "This webpage is useless. Just like your attempt to roast me.",
+            "ERROR 404: Detected too old person. 🔥",
+            "If you were a song you would be -violent pornography - System of down.",
+            "Roses are red, Violets are blue, I’d optimize your life. (Romantic, right?)"
+        ];
+
+        function changeMessage() {
+            const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+            document.getElementById("message").innerHTML = randomMessage;
+        }
+    </script>
+</body>
+</html>
